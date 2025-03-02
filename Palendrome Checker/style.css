@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #6A11CB, #2575FC);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 450px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.container h1{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    padding-left: 8px;
+    width: 250px;
+    font-size: 1.1rem;
+}
+
+.input button{
+        background-color: rgb(53, 53, 247);
+    color: white;
+    max-width: 100px;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.container #result{
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 14px;
+    font-size: 1.16rem;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(53, 53, 247);
+}
+
+
+@media screen and (max-width:525px) {
+    .container{
+        width:375px;
+    }
+
+    .container h1{
+        font-size: 1.7rem;
+    }
+
+    .input input{
+        width: 190px;
+        font-size: 1rem;
+    }
+
+    .input button{
+        padding: 9px 18px;
+    }
+
+    .container #result{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .container{
+        width:325px;
+        padding: 20px 15px;
+    }
+
+    .container h1{
+        font-size: 1.5rem;
+    }
+
+    .input input{
+        width: 190px;
+        font-size: 1rem;
+    }
+
+    .input button{
+        padding: 9px 18px;
+    }
+
+    .container #result{
+        font-size: 1.1rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+@media screen and (max-width:345px) {
+    .container{
+        width:290px;
+        padding: 20px 15px;
+    }
+
+    .container h1{
+        font-size: 1.3rem;
+    }
+
+    .input input{
+        width: 150px;
+        font-size: 0.9rem;
+    }
+
+    .input button{
+        padding: 8px 16px;
+    }
+
+    .container #result{
+        font-size: 1.04rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
