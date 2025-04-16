@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+        body {
+      background: #f8f9fa;
+      font-family: 'poppins', sans-serif;
+    }
+    .container {
+      max-width: 800px;
+    }
+    .card {
+      margin-top: 0px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    #cards{
+      margin-top: 20px;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .form-control {
+      border-radius: 12px;
+    }
+    #submitBtn {
+      border-radius: 12px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+  <h2 class="mb-4 text-center" style="color: darkblue;">CAR INFORMATION FORM</h2>
+
+  <!-- Car Input Form -->
+  <div class="row g-3">
+    <div class="col-md-6">
+      <input type="text" id="name" class="form-control" placeholder="Car Name">
+    </div>
+    <div class="col-md-6">
+      <input type="text" id="model" class="form-control" placeholder="Model">
+    </div>
+    <div class="col-md-6">
+      <input type="text" id="engine" class="form-control" placeholder="Engine Type">
+    </div>
+    <div class="col-md-6">
+      <input type="text" id="transmission" class="form-control" placeholder="Transmission">
+    </div>
+    <div class="col-12">
+      <input type="text" id="image" class="form-control" placeholder="Image URL">
+    </div>
+    <div class="col-12 text-center">
+      <button id="submitBtn" class="btn btn-success px-5">Add Car</button>
+    </div>
+  </div>
+
+    <div id="cards" class="card w-50 mx-auto shadow"></div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
